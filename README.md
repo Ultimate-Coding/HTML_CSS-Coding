@@ -18,4 +18,4 @@ For example, if the total number of slides is smaller than the available space, 
 was because the *auto scrolling in section 5* and if I use javascript code instead of *scroll-behavior: smooth*, the auto scrolling stops, so I used jQuery
 for this purpose only.
 
- 6. For icons, instead of using *font-awesome library*, I used HTML Entities.
+6. For icons, instead of using *font-awesome library*, I used HTML Entities.
