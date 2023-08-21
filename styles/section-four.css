@@ -1,0 +1,86 @@
+/* ///////////////////////////////////////////////////////////////// */
+/* About */
+/* ///////////////////////////////////////////////////////////////// */
+
+#about {
+  padding-left: var(--padding);
+  padding-right: var(--padding);
+  margin-top: var(--margin-top);
+}
+
+#about .container {
+  position: relative;
+  height: 40vh;
+  width: 80vw;
+  margin: auto;
+  color: white;
+}
+
+#about .container .background {
+  background: linear-gradient(to right bottom, #9e8db9, blue, pink);
+  border: 10px solid #b8b8b8;
+  border-radius: 20px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+#about .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+#about .content span {
+  font-weight: bold;
+  color: orange;
+}
+
+#about .main {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-color: var(--color);
+  border-radius: 25%;
+  position: relative;
+  border: 3px solid #b8b8b8;
+  margin-right: 10px;
+  transition: 1s;
+  margin-bottom: 10px;
+}
+
+#about p {
+  padding: 20px;
+  opacity: 0.7;
+}
+
+#about .main::after {
+  content: "\2655";
+  color: yellow;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#about .menu {
+  text-decoration: none;
+  cursor: pointer;
+  color: #000;
+  background: linear-gradient(to right bottom, yellow, orange);
+  border: 3px solid #b8b8b8;
+  border-radius: 10px;
+  padding: 5px 15px;
+}
+
+@media only screen and (min-width: 600px) {
+  #about .content {
+    width: 50%;
+  }
+}

@@ -1,0 +1,107 @@
+:root {
+  --color: purple;
+  --white-with-opacity: rgba(255, 255, 255, 0.8);
+  --red: red;
+  --margin-top: 12vh;
+  --padding: 10vw;
+  --box-shadow: 0 0 50px purple;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  height: 100%;
+  line-height: 1.8;
+  background-color: #f8f8f8;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #d3d3d3;
+}
+
+::-webkit-scrollbar-thumb {
+  background: violet;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+h1:not(#home h1) {
+  text-transform: capitalize;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+/* Navbar */
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+
+header {
+  background: linear-gradient(to right bottom, #9e8db9, blue, pink);
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+nav {
+  color: #fff;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+  color: orange;
+}
+
+nav div a {
+  display: none;
+}
+
+header .links-small-screen {
+  display: block;
+}
+
+header .links-small-screen a,
+nav div a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 15px;
+}
+
+nav .button {
+  color: #000;
+  background: linear-gradient(to right bottom, yellow, orange);
+  border: 3px solid #b8b8b8;
+  border-radius: 10px;
+  padding: 5px 15px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////// */
+@media only screen and (min-width: 600px) {
+  header .links-small-screen {
+    display: none;
+  }
+
+  nav div a {
+    display: inline;
+  }
+}

@@ -1,0 +1,211 @@
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+/* Section 1 */
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#home {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 6vh;
+  height: 60vh;
+  color: white;
+  padding: 0;
+}
+
+#home .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+
+#home h1 {
+  font-size: 30px;
+}
+
+#home .switch {
+  color: orange;
+  display: inline-block;
+  animation: switch 4.5s infinite;
+  position: absolute;
+  opacity: 0;
+}
+
+#home .eating {
+  animation-delay: 0s;
+}
+
+#home .lifestyle {
+  animation-delay: 1.5s;
+}
+
+#home .sleeping {
+  animation-delay: 3s;
+}
+
+@keyframes switch {
+  0% {
+    opacity: 1;
+  }
+  27.77% {
+    opacity: 1;
+  }
+  33.33% {
+    opacity: 0;
+  }
+  94.44% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#home h5 {
+  color: var(--white-with-opacity);
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+#home .links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+#home a {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+#home .menu {
+  text-decoration: none;
+  cursor: pointer;
+  color: #000;
+  background: linear-gradient(to right bottom, yellow, orange);
+  border: 3px solid #b8b8b8;
+  border-radius: 10px;
+  padding: 5px 15px;
+  margin-top: 2vh;
+}
+
+#home .links div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 2vh;
+}
+
+#home .button {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  border: 3px solid #b8b8b8;
+  margin-right: 10px;
+}
+
+#home .button::after {
+  content: "\27A4";
+  color: orange;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#home .img-container {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 150px 150px 50px 50px;
+  background-color: blue;
+  border: 10px solid white;
+}
+
+#home .img-container img {
+  position: absolute;
+  object-fit: contain;
+  width: 150%;
+  height: 150%;
+}
+
+.home-footer {
+  height: 10vh;
+  background-color: rgba(147, 112, 219, 0.5);
+  padding-left: 10vw;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.home-footer > div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: purple;
+  width: 100%;
+}
+
+.home-footer p {
+  margin-right: 10vw;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////// */
+@media only screen and (min-width: 600px) {
+  #home .img-container {
+    width: 30%;
+    height: 110%;
+    border: 20px solid white;
+  }
+
+  #home .container,
+  .home-footer > div {
+    width: 50%;
+  }
+  #home .img-container {
+    display: flex;
+    align-items: center;
+  }
+
+  #home .links {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #home h1 {
+    font-size: 40px;
+  }
+
+  #home .links {
+    width: 90%;
+    flex-direction: row;
+  }
+
+  #home .links div {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #home .links {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #home .links {
+    width: 50%;
+  }
+}

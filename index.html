@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="styles/section-one.css" />
+    <link rel="stylesheet" type="text/css" href="styles/section-two.css" />
+    <link rel="stylesheet" type="text/css" href="styles/section-three.css" />
+    <link rel="stylesheet" type="text/css" href="styles/section-four.css" />
+    <link rel="stylesheet" type="text/css" href="styles/section-five.css" />
+    <link rel="stylesheet" type="text/css" href="styles/section-six.css" />
+    <link rel="stylesheet" type="text/css" href="styles/footer.css" />
+
+    <title>Task</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Eatly</div>
+        <div>
+          <a href="#programs" class="link">Programs</a>
+          <a href="#services" class="link"> Services</a>
+          <a href="#menu" class="link"> News</a>
+          <a href="#about" class="link">About Us</a>
+        </div>
+        <a class="button">Let's Talk</a>
+      </nav>
+
+      <!-- for small screens -->
+      <div class="links-small-screen">
+        <a href="#programs" class="link">Programs</a>
+        <a href="#services" class="link"> Services</a>
+        <a href="#menu" class="link"> News</a>
+        <a href="#about" class="link">About Us</a>
+      </div>
+      <!-- for small screens -->
+
+      <section id="home">
+        <div class="container">
+          <h1>
+            Changing<br />
+            your &nbsp; <span class="switch eating"> eating </span>
+            <span class="switch lifestyle"> Lifestyle </span>
+            <span class="switch sleeping"> Sleeping</span>
+            <br />habits
+          </h1>
+          <h5>
+            Always take care of your health starting from<br />
+            the food menu that you consume every day
+          </h5>
+          <div class="links">
+            <a class="menu" href="#">Explore Menu</a>
+            <div>
+              <span class="button"></span>
+              <a href="#">Watch Video</a>
+            </div>
+          </div>
+        </div>
+        <div class="img-container">
+          <img src="assets/fruits.png" alt="fruits" />
+        </div>
+      </section>
+    </header>
+    <section class="home-footer">
+      <div>
+        <p>Ecologics</p>
+        <h2>&#10026; HERD</h2>
+      </div>
+    </section>
+
+    <section id="programs">
+      <div class="header">
+        <h1><span class="main"></span> Our Best Programs</h1>
+        <div>
+          <span class="button previous" onclick="previousProgram()"></span>
+          <span class="button next" onclick="nextProgram()"></span>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="background"></div>
+
+        <div class="programs">
+          <div>
+            <div class="program">
+              <span class="icon one"></span>
+              <h2>Healthy Recipe</h2>
+              <p>Healthier Recipes, from food & nutrition experts</p>
+              <a href="#">Learn More &#10148;</a>
+            </div>
+            <div class="program">
+              <span class="icon two"></span>
+              <h2>Healthy Meals</h2>
+              <p>Learn how to become a meal-planning pro</p>
+              <a href="#">Learn More &#10148;</a>
+            </div>
+
+            <div class="program">
+              <span class="icon three"></span>
+              <h2>Healthy Eating</h2>
+              <p>Eat healthy with our expert & inspiration tips</p>
+              <a href="#">Learn More &#10148;</a>
+            </div>
+            <div class="program">
+              <span class="icon four"></span>
+              <h2>Healthy Lifes</h2>
+              <p>Your life is your choice, make yourself healthier</p>
+              <a href="#">Learn More &#10148;</a>
+            </div>
+            <div class="program">
+              <span class="icon one"></span>
+              <h2>Healthy Recipe</h2>
+              <p>Healthier Recipes, from food & nutrition experts</p>
+              <a href="#">Learn More &#10148;</a>
+            </div>
+            <div class="program">
+              <span class="icon two"></span>
+              <h2>Healthy Meals</h2>
+              <p>Learn how to become a meal-planning pro</p>
+              <a href="#">Learn More &#10148;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="img-container">
+        <img src="assets/services.png" alt="services" />
+      </div>
+      <div class="container">
+        <div>
+          <h1><span class="main"></span> Our Value To Help You</h1>
+          <p>
+            We always want to provide the best value for you and your health,
+            join us to maximize the benefits
+          </p>
+        </div>
+
+        <div class="cards">
+          <div class="card">
+            <div class="effect"></div>
+            <div class="icon">&#10030;</div>
+            <h3>Becomes Healthier</h3>
+            <p>immune will stronger if the body is healthier</p>
+          </div>
+          <div class="card">
+            <div class="effect"></div>
+            <div class="icon">&#10084;</div>
+            <h3>Increase Energy</h3>
+            <p>Have enough energy can help carry out a routine</p>
+          </div>
+          <div class="card">
+            <div class="effect"></div>
+            <div class="icon">&#10030;</div>
+            <h3>Controlling Weight</h3>
+            <p>Body will feel lighter and will not be easily tired</p>
+          </div>
+          <div class="card">
+            <div class="effect"></div>
+            <div class="icon">&#10084;</div>
+            <h3>Becomes Happier</h3>
+            <p>Living a healthy life also increase self-confidence</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="container">
+        <div class="background"></div>
+        <div class="content">
+          <span class="main"></span>
+          <h1>Get Started With <span>Eatly</span></h1>
+          <p>
+            Discover tips & news for your health from experts and get the best
+            discounts by getting started
+          </p>
+          <a class="menu" href="#">Get Started</a>
+        </div>
+      </div>
+    </section>
+    <section id="menu">
+      <h1><span class="main"></span> Try Our Healthy Menu</h1>
+      <div class="header">
+        <p>
+          We provide a variety of healthy recipes that have been curated by our
+          best nutritionists for you
+        </p>
+        <div>
+          <span class="button previous" onclick="previousRecipe()"></span>
+          <span class="button next" onclick="nextRecipe()"></span>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="left-menu">
+          <div class="items">
+            <div class="item" id="breakfast">
+              <div class="effect"></div>
+              <div class="icon">&#10030;</div>
+              <h3>Breakfast Recipes</h3>
+            </div>
+            <div class="item" id="low-calorie">
+              <div class="effect"></div>
+              <div class="icon">&#10030;</div>
+              <h3>Low-Calorie Recipes</h3>
+            </div>
+
+            <div class="item" id="holiday">
+              <div class="effect"></div>
+              <div class="icon">&#10030;</div>
+              <h3>Holiday Recipes</h3>
+            </div>
+
+            <div class="item" id="restriction">
+              <div class="effect"></div>
+              <div class="icon">&#10030;</div>
+              <h3>Restriction Recipes</h3>
+            </div>
+            <div class="item" id="dinner">
+              <div class="effect"></div>
+              <div class="icon">&#10030;</div>
+              <h3>Breakfast Recipes</h3>
+            </div>
+            <div class="item" id="high-calorie">
+              <div class="effect"></div>
+              <div class="icon">&#10030;</div>
+              <h3>Low-Calorie Recipes</h3>
+            </div>
+
+            <div class="item" id="lunch">
+              <div class="effect"></div>
+              <div class="icon">&#10030;</div>
+              <h3>Holiday Recipes</h3>
+            </div>
+          </div>
+        </div>
+        <div class="right-menu">
+          <div class="cards">
+            <div class="card" data-info="breakfast">
+              <div class="card-content">
+                <div class="img-container">
+                  <img src="assets/onions.png" alt="rice" />
+                </div>
+                <div class="content">
+                  <h3>Red Onions With Chopped Cabbage</h3>
+                  <a class="details" href="#">Try Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="card" data-info="breakfast">
+              <div class="card-content">
+                <div class="img-container">
+                  <img src="assets/apples.png" alt="rice" />
+                </div>
+                <div class="content">
+                  <h3>Low Fat Apple Cake With White Cream</h3>
+                  <a class="details" href="#">Try Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="card" data-info="breakfast">
+              <div class="card-content">
+                <div class="img-container">
+                  <img src="assets/onions.png" alt="rice" />
+                </div>
+                <div class="content">
+                  <h3>Red Onions With Chopped Cabbage</h3>
+                  <a class="details" href="#">Try Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="card" data-info="breakfast">
+              <div class="card-content">
+                <div class="img-container">
+                  <img src="assets/apples.png" alt="rice" />
+                </div>
+                <div class="content">
+                  <h3>Low Fat Apple Cake With White Cream</h3>
+                  <a class="details" href="#">Try Now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card" data-info="low-calorie">
+              <div class="card-content">
+                <div class="img-container">
+                  <img src="assets/onions.png" alt="rice" />
+                </div>
+                <div class="content">
+                  <h3>Chopped Cabbage</h3>
+                  <a class="details" href="#">Try Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="card" data-info="low-calorie">
+              <div class="card-content">
+                <div class="img-container">
+                  <img src="assets/apples.png" alt="rice" />
+                </div>
+                <div class="content">
+                  <h3>White Cream</h3>
+                  <a class="details" href="#">Try Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="card" data-info="low-calorie">
+              <div class="card-content">
+                <div class="img-container">
+                  <img src="assets/onions.png" alt="rice" />
+                </div>
+                <div class="content">
+                  <h3>Chopped Cabbage</h3>
+                  <a class="details" href="#">Try Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="card" data-info="low-calorie">
+              <div class="card-content">
+                <div class="img-container">
+                  <img src="assets/apples.png" alt="rice" />
+                </div>
+                <div class="content">
+                  <h3>White Cream</h3>
+                  <a class="details" href="#">Try Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="card" data-info="low-calorie">
+              <div class="card-content">
+                <div class="img-container">
+                  <img src="assets/onions.png" alt="rice" />
+                </div>
+                <div class="content">
+                  <h3>Chopped Cabbage</h3>
+                  <a class="details" href="#">Try Now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card" data-info="holiday">
+              <div class="card-content">
+                <div class="img-container">
+                  <img src="assets/onions.png" alt="rice" />
+                </div>
+                <div class="content">
+                  <h3>Chopped Cabbage</h3>
+                  <a class="details" href="#">Try Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="card" data-info="holiday">
+              <div class="card-content">
+                <div class="img-container">
+                  <img src="assets/apples.png" alt="rice" />
+                </div>
+                <div class="content">
+                  <h3>White Cream</h3>
+                  <a class="details" href="#">Try Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="card" data-info="holiday">
+              <div class="card-content">
+                <div class="img-container">
+                  <img src="assets/onions.png" alt="rice" />
+                </div>
+                <div class="content">
+                  <h3>Chopped Cabbage</h3>
+                  <a class="details" href="#">Try Now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card" data-info="restriction">
+              <div class="card-content">
+                <div class="img-container">
+                  <img src="assets/onions.png" alt="rice" />
+                </div>
+                <div class="content">
+                  <h3>Chopped Cabbage</h3>
+                  <a class="details" href="#">Try Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="card" data-info="restriction">
+              <div class="card-content">
+                <div class="img-container">
+                  <img src="assets/onions.png" alt="rice" />
+                </div>
+                <div class="content">
+                  <h3>Chopped Cabbage</h3>
+                  <a class="details" href="#">Try Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="card" data-info="restriction">
+              <div class="card-content">
+                <div class="img-container">
+                  <img src="assets/apples.png" alt="rice" />
+                </div>
+                <div class="content">
+                  <h3>White Cream</h3>
+                  <a class="details" href="#">Try Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="card" data-info="restriction">
+              <div class="card-content">
+                <div class="img-container">
+                  <img src="assets/onions.png" alt="rice" />
+                </div>
+                <div class="content">
+                  <h3>Chopped Cabbage</h3>
+                  <a class="details" href="#">Try Now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card" data-info="dinner">
+              <div class="card-content">
+                <div class="img-container">
+                  <img src="assets/onions.png" alt="rice" />
+                </div>
+                <div class="content">
+                  <h3>Chopped Cabbage</h3>
+                  <a class="details" href="#">Try Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="card" data-info="dinner">
+              <div class="card-content">
+                <div class="img-container">
+                  <img src="assets/apples.png" alt="rice" />
+                </div>
+                <div class="content">
+                  <h3>White Cream</h3>
+                  <a class="details" href="#">Try Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="card" data-info="dinner">
+              <div class="card-content">
+                <div class="img-container">
+                  <img src="assets/onions.png" alt="rice" />
+                </div>
+                <div class="content">
+                  <h3>Chopped Cabbage</h3>
+                  <a class="details" href="#">Try Now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card" data-info="high-calorie">
+              <div class="card-content">
+                <div class="img-container">
+                  <img src="assets/onions.png" alt="rice" />
+                </div>
+                <div class="content">
+                  <h3>Chopped Cabbage</h3>
+                  <a class="details" href="#">Try Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="card" data-info="high-calorie">
+              <div class="card-content">
+                <div class="img-container">
+                  <img src="assets/onions.png" alt="rice" />
+                </div>
+                <div class="content">
+                  <h3>Chopped Cabbage</h3>
+                  <a class="details" href="#">Try Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="card" data-info="high-calorie">
+              <div class="card-content">
+                <div class="img-container">
+                  <img src="assets/apples.png" alt="rice" />
+                </div>
+                <div class="content">
+                  <h3>White Cream</h3>
+                  <a class="details" href="#">Try Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="card" data-info="high-calorie">
+              <div class="card-content">
+                <div class="img-container">
+                  <img src="assets/onions.png" alt="rice" />
+                </div>
+                <div class="content">
+                  <h3>Chopped Cabbage</h3>
+                  <a class="details" href="#">Try Now</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card" data-info="lunch">
+              <div class="card-content">
+                <div class="img-container">
+                  <img src="assets/onions.png" alt="rice" />
+                </div>
+                <div class="content">
+                  <h3>Chopped Cabbage</h3>
+                  <a class="details" href="#">Try Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="card" data-info="lunch">
+              <div class="card-content">
+                <div class="img-container">
+                  <img src="assets/apples.png" alt="rice" />
+                </div>
+                <div class="content">
+                  <h3>White Cream</h3>
+                  <a class="details" href="#">Try Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="card" data-info="lunch">
+              <div class="card-content">
+                <div class="img-container">
+                  <img src="assets/onions.png" alt="rice" />
+                </div>
+                <div class="content">
+                  <h3>Chopped Cabbage</h3>
+                  <a class="details" href="#">Try Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="small-screen-buttons">
+        <span class="button previous" onclick="previousRecipe()"></span>
+        <span class="button next" onclick="nextRecipe()"></span>
+      </div>
+    </section>
+    <section id="testimonials">
+      <div class="img-container">
+        <img src="./assets/testimonials.png" alt="testimonials" />
+      </div>
+      <div class="container">
+        <div>
+          <h1><span class="main"></span> Testimonials About Us</h1>
+          <p>
+            In the smallest case we always give your best, find out what other
+            users have to say about us
+          </p>
+        </div>
+
+        <div class="testimonials">
+          <div class="cards-container">
+            <div class="cards">
+              <div class="card">
+                <div class="icon">&#10030;</div>
+                <p>
+                  "Pellentesque habitant morbi tristique senectus et netus et
+                  malesuada fames ac turpis egestas. Vestibulum tortor quam,
+                  feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu
+                  libero sit amet quam egestas semper. Aenean ultricies mi vitae
+                  est. Mauris placerat eleifend leo."
+                </p>
+                <div class="footer">
+                  <div class="info">
+                    <h3>Rara Sanchez</h3>
+                    <p>Freelancer</p>
+                  </div>
+                  <div class="buttons">
+                    <span class="button previous"></span>
+                    <span class="button next"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="icon">&#10084;</div>
+                <p>
+                  "Pellentesque habitant morbi tristique senectus et netus et
+                  malesuada fames ac turpis egestas. Vestibulum tortor quam,
+                  feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu
+                  libero sit amet quam egestas semper. Aenean ultricies mi vitae
+                  est. Mauris placerat eleifend leo."
+                </p>
+                <div class="footer">
+                  <div class="info">
+                    <h3>John Mark</h3>
+                    <p>Developer</p>
+                  </div>
+                  <div class="buttons">
+                    <span class="button previous"></span>
+                    <span class="button next"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="icon">&#10030;</div>
+                <p>
+                  "Pellentesque habitant morbi tristique senectus et netus et
+                  malesuada fames ac turpis egestas. Vestibulum tortor quam,
+                  feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu
+                  libero sit amet quam egestas semper. Aenean ultricies mi vitae
+                  est. Mauris placerat eleifend leo."
+                </p>
+                <div class="footer">
+                  <div class="info">
+                    <h3>Ali Ahmad</h3>
+                    <p>Designer</p>
+                  </div>
+                  <div class="buttons">
+                    <span class="button previous"></span>
+                    <span class="button next"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="icon">&#10084;</div>
+                <p>
+                  "Pellentesque habitant morbi tristique senectus et netus et
+                  malesuada fames ac turpis egestas. Vestibulum tortor quam,
+                  feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu
+                  libero sit amet quam egestas semper. Aenean ultricies mi vitae
+                  est. Mauris placerat eleifend leo."
+                </p>
+                <div class="footer">
+                  <div class="info">
+                    <h3>Tareq Mustafa</h3>
+                    <p>front end developer</p>
+                  </div>
+                  <div class="buttons">
+                    <span class="button previous"></span>
+                    <span class="button next"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer">
+      <div class="info">
+        <div class="eatly">
+          <h1 class="logo">Eatly</h1>
+          <p>
+            We have a mission to make people around the world better through a
+            healthier diet
+          </p>
+        </div>
+        <div class="links">
+          <div>
+            <h3>About</h3>
+            <a href="#">About Us</a>
+            <a href="#">Features</a>
+            <a href="#">News & Blog</a>
+          </div>
+          <div>
+            <h3>Movement</h3>
+            <a href="#">What Eatly</a>
+            <a href="#">Support Us</a>
+          </div>
+          <div>
+            <h3>Company</h3>
+            <a href="#">Why Eatly</a>
+            <a href="#">Capital</a>
+            <a href="#">Security</a>
+          </div>
+          <div>
+            <h3>Support</h3>
+            <a href="#">FAQs</a>
+            <a href="#">Support Center</a>
+            <a href="#">Contact Us</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="rights">
+        <p>2021 Eatly. All rights reserved</p>
+        <div>
+          <p>Terms & Agreements</p>
+          <p>Privacy Policy</p>
+        </div>
+      </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      // //Navbar;
+      // //Navbar;
+      $("header .link").on("click", function (e) {
+        e.preventDefault();
+
+        const href = $(this).attr("href");
+
+        $("html, body").animate({ scrollTop: $(href).offset().top }, 1000);
+      });
+      //////////////////////////////////////////////////////////////////////////////////////////
+
+      // //////////////////////////////////////////////////////////////////////////////////////////
+      //Section 2
+      //Section 2
+      let programIndex = 0;
+      let programSlides = document.getElementsByClassName("program");
+      let programSlider = document.querySelector(".programs > div");
+      let programPrevious = document.querySelector("#programs .previous");
+      let programNext = document.querySelector("#programs .next");
+
+      function nextProgram() {
+        programIndex++;
+        moveProgram();
+        programPrevious.style.opacity = "1";
+        programPrevious.style.pointerEvents = "auto";
+        if (programIndex === programSlides.length - 4) {
+          programNext.style.opacity = "0.2";
+          programNext.style.pointerEvents = "none";
+        }
+      }
+
+      function previousProgram() {
+        programIndex--;
+        moveProgram();
+        programNext.style.opacity = "1";
+        programNext.style.pointerEvents = "auto";
+        if (programIndex === 0) {
+          programPrevious.style.opacity = "0.2";
+          programPrevious.style.pointerEvents = "none";
+        }
+      }
+
+      function moveProgram() {
+        if (window.innerWidth < 600) {
+          programSlider.style.transform = `translateX(${-80 * programIndex}vw)`;
+        } else if (window.innerWidth >= 600 && window.innerWidth < 768) {
+          programSlider.style.transform = `translateX(${-40 * programIndex}vw)`;
+        } else {
+          programSlider.style.transform = `translateX(${-20 * programIndex}vw)`;
+        }
+      }
+      // //////////////////////////////////////////////////////////////////////////////////////////
+
+      // //////////////////////////////////////////////////////////////////////////////////////////
+      //Section 5
+      //Section 5
+      //Left Side
+      //Left Side
+      let menuId;
+      let previousIndex = 0;
+      let menuIndex = 1;
+      let menu = document.querySelector("#menu .left-menu");
+      let menuItems = document.querySelectorAll("#menu .left-menu .item");
+
+      function nextMenu() {
+        menu.scrollTop = `${menuIndex}`;
+
+        //  When the scroll reach the bottom, menu.scrollTop value will be always fixed value.
+        //  we can use this trick to move the scroll to the top
+
+        if (previousIndex !== menu.scrollTop) {
+          previousIndex = menu.scrollTop;
+        } else {
+          previousIndex = 0;
+          menuIndex = 1;
+        }
+
+        menuIndex++;
+      }
+
+      function startScrolling() {
+        menuId = setInterval(nextMenu, 50);
+      }
+
+      function stopScrolling() {
+        clearInterval(menuId);
+      }
+      startScrolling();
+
+      menu.onmouseenter = stopScrolling;
+      menu.onmouseleave = startScrolling;
+      // //////////////////////////////////////////////////////////////////////////////////////////
+
+      // // //////////////////////////////////////////////////////////////////////////////////////////
+      //Section 5
+      //Section 5
+      //Right Side
+      //Right Side
+      let recipeIndex = 0;
+      let recipeId;
+      let recipeSlides = document.querySelectorAll("#menu .card");
+      let recipeSlider = document.querySelector("#menu .right-menu .cards");
+      let recipePrevious = document.querySelector("#menu  .previous");
+      let recipeNext = document.querySelector("#menu  .next");
+
+      let currentRecipes = 0;
+      //////////////////////////////////////////////////////////////////////////////////
+      // At first, show only recipes of the first menu
+      for (i = 0; i < recipeSlides.length; i++) {
+        if (recipeSlides[i].dataset.info !== "breakfast") {
+          recipeSlides[i].style.display = "none";
+        } else {
+          recipeSlides[i].style.display = "block";
+          currentRecipes++;
+        }
+      }
+      //////////////////////////////////////////////////////////////////////////////////
+      //When clicking on one of the menus, , its recipes appear
+      menuItems.forEach((item) => {
+        item.addEventListener("click", function handleClick(e) {
+          let id = e.target.parentElement.id || e.target.id;
+          let counter = 0;
+          for (i = 0; i < recipeSlides.length; i++) {
+            if (recipeSlides[i].dataset.info !== id) {
+              recipeSlides[i].style.display = "none";
+            } else {
+              recipeSlides[i].style.display = "block";
+              counter++;
+            }
+          }
+          recipeSlider.style.transform = `translateX(0vw)`;
+          recipeIndex = 0;
+          recipeNext.style.opacity = "1";
+          recipeNext.style.pointerEvents = "auto";
+          recipePrevious.style.opacity = "0.2";
+          recipePrevious.style.pointerEvents = "none";
+          currentRecipes = counter;
+          console.log(currentRecipes);
+        });
+      });
+
+      function nextRecipe() {
+        recipeIndex++;
+        moveRecipe();
+        recipePrevious.style.opacity = "1";
+        recipePrevious.style.pointerEvents = "auto";
+        if (recipeIndex >= currentRecipes - 2) {
+          recipeNext.style.opacity = "0.2";
+          recipeNext.style.pointerEvents = "none";
+        }
+      }
+
+      function previousRecipe() {
+        recipeIndex--;
+        moveRecipe();
+        recipeNext.style.opacity = "1";
+        recipeNext.style.pointerEvents = "auto";
+        if (recipeIndex <= 0) {
+          recipePrevious.style.opacity = "0.2";
+          recipePrevious.style.pointerEvents = "none";
+        }
+      }
+
+      function moveRecipe() {
+        if (window.innerWidth < 768) {
+          recipeSlider.style.transform = `translateX(${-40 * recipeIndex}vw)`;
+        } else {
+          recipeSlider.style.transform = `translateX(${-20 * recipeIndex}vw)`;
+        }
+      }
+
+      function startRecipesSlider() {
+        recipeId = setInterval(() => {
+          recipeIndex++;
+          moveRecipe();
+          recipePrevious.style.opacity = "1";
+          recipePrevious.style.pointerEvents = "auto";
+          if (recipeIndex >= currentRecipes - 2) {
+            recipeNext.style.opacity = "0.2";
+            recipeNext.style.pointerEvents = "none";
+            recipeIndex = -1;
+          }
+
+          if (recipeIndex === 0) {
+            recipePrevious.style.opacity = "0.2";
+            recipePrevious.style.pointerEvents = "none";
+            recipeNext.style.opacity = "1";
+            recipeNext.style.pointerEvents = "auto";
+          }
+        }, 2000);
+      }
+
+      function stopRecipesSlider() {
+        clearInterval(recipeId);
+      }
+      startRecipesSlider();
+
+      recipeSlider.onmouseenter = stopRecipesSlider;
+      recipeSlider.onmouseleave = startRecipesSlider;
+      // //////////////////////////////////////////////////////////////////////////////////////////
+
+      // /////////////////////////////////////////////////////////////////////////////////////
+      // Section 6
+      // Section 6
+      let testimonialIndex = 0;
+      let testimonialId;
+      let testimonialSlides = document.querySelectorAll("#testimonials .card");
+      let testimonialSlider = document.querySelector(
+        "#testimonials .testimonials .cards"
+      );
+      let testimonialPrevious = document.querySelectorAll(
+        "#testimonials .previous"
+      );
+      let testimonialNext = document.querySelectorAll("#testimonials .next");
+
+      testimonialPrevious.forEach((item) => {
+        item.addEventListener("click", previousTestimonial);
+      });
+
+      testimonialNext.forEach((item) => {
+        item.addEventListener("click", nextTestimonial);
+      });
+
+      function nextTestimonial() {
+        testimonialIndex++;
+        testimonialSlider.style.transform = `translateX(${
+          -100 * testimonialIndex
+        }%)`;
+      }
+
+      function previousTestimonial() {
+        testimonialIndex--;
+        testimonialSlider.style.transform = `translateX(${
+          -100 * testimonialIndex
+        }%)`;
+      }
+
+      function startTestimonialSlider() {
+        testimonialId = setInterval(() => {
+          if (testimonialIndex === testimonialSlides.length - 1) {
+            testimonialIndex = -1;
+          }
+          nextTestimonial();
+        }, 4000);
+      }
+
+      function stopTestimonialSlider() {
+        clearInterval(testimonialId);
+      }
+      startTestimonialSlider();
+
+      testimonialSlider.onmouseenter = stopTestimonialSlider;
+      testimonialSlider.onmouseleave = startTestimonialSlider;
+    </script>
+  </body>
+</html>

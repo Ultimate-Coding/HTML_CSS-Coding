@@ -1,0 +1,238 @@
+/* ///////////////////////////////////////////////////////////////// */
+/* programs */
+/* ///////////////////////////////////////////////////////////////// */
+
+#programs {
+  padding-left: var(--padding);
+  padding-right: var(--padding);
+  margin-top: var(--margin-top);
+}
+
+#programs .header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+#programs .header div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2vh;
+  width: 100%;
+}
+
+#programs h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color);
+  margin-bottom: 2vh;
+}
+
+#programs a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: small;
+  opacity: 0;
+  transition: 1s;
+}
+
+#programs .icon {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-color: var(--color);
+  border-radius: 25%;
+  position: relative;
+  border: 3px solid #b8b8b8;
+  margin-right: 10px;
+  margin-top: 15vh;
+  transition: 1s;
+}
+
+#programs .main {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-color: var(--color);
+  border-radius: 25%;
+  position: relative;
+  border: 3px solid #b8b8b8;
+  margin-right: 10px;
+  transition: 1s;
+}
+
+#programs .container {
+  position: relative;
+  height: 50vh;
+  width: 80vw;
+}
+
+#programs .container .background {
+  background: linear-gradient(to right bottom, #9e8db9, blue, pink);
+  border: 10px solid #b8b8b8;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 0;
+  height: 40vh;
+  width: 100%;
+  z-index: -1;
+}
+
+#programs .container .programs {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  overflow: hidden;
+}
+
+#programs .container .programs > div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  transition: 0.5s;
+}
+
+#programs .programs .program {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  overflow: hidden;
+  height: 100%;
+  min-width: 100%;
+}
+
+#programs .programs .program:hover {
+  background-color: orange;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+}
+
+#programs .programs .program:hover a {
+  opacity: 1;
+}
+
+#programs .programs .program:hover .icon,
+#programs .programs .program:hover h2,
+#programs .programs .program:hover p {
+  transform: translateY(-10vh);
+}
+
+#programs .programs .program:hover a {
+  transform: translateY(-5vh);
+}
+
+#programs h2 {
+  color: #fff;
+  padding: 15px;
+  transition: 1s;
+  text-align: center;
+}
+
+#programs p {
+  text-align: center;
+  font-size: small;
+  width: 80%;
+  color: var(--white-with-opacity);
+  min-height: 10vh;
+  overflow-y: auto;
+  transition: 1s;
+  text-align: center;
+}
+
+#programs .programs .program:hover h2,
+#programs .programs .program:hover p {
+  color: black;
+}
+
+#programs .icon::after,
+#programs .main::after {
+  color: yellow;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#programs .main::after {
+  content: "\2655";
+}
+
+#programs .icon.one::after {
+  content: "\2655";
+}
+
+#programs .icon.two::after {
+  content: "\272E";
+}
+#programs .icon.three::after {
+  content: "\2764";
+}
+#programs .icon.four::after {
+  content: "\273D";
+}
+
+#programs .button {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  border: 3px solid #b8b8b8;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#programs .previous {
+  pointer-events: none;
+  opacity: 0.2;
+}
+
+#programs .previous::after {
+  content: "\2B9C";
+  color: var(--color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#programs .next::after {
+  content: "\2B9E";
+  color: var(--color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ////////////////////////////////////////////////////////////////////////////// */
+@media only screen and (min-width: 600px) {
+  #programs .programs .program {
+    min-width: 50%;
+  }
+  #programs .header {
+    flex-direction: row;
+  }
+
+  #programs .header div {
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #programs .programs .program {
+    min-width: 25%;
+  }
+}
