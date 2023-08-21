@@ -21,6 +21,6 @@ for this purpose only.
 
 6. For icons, instead of using *font-awesome library*, I used HTML Entities.
 
-7. The sliders in section 5 & 6 is automatic with different intervals for the slide to move and when hovering the slides stops.
+7. The sliders in section 5 & 6 is automatic with different intervals for the slide to move and when hovering the slides stop.
 
 
