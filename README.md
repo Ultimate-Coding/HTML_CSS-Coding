@@ -1,6 +1,7 @@
 # HTML_CSS-Coding
 
  ### I have completed all the requirements of the task, but I would like to point out several things:
+ 
 
 1. For readability, I created multiple CSS files. Each section has its own css file.
 
